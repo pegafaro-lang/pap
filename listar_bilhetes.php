@@ -2,7 +2,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-// 1️⃣ Ligar à base de dados
+// 1️⃣ Ligar à base de dados e testar
 $ligacao = new mysqli("localhost", "root", "", "cinema");
 
 // Verificar se há erro na ligação
@@ -33,4 +33,5 @@ if ($resultado->num_rows > 0) {
 }
 // 4️⃣ Fechar a ligação
 $ligacao->close();
+
 ?>
